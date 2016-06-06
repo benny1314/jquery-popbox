@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+    <script src="js/jquery.popbox.js" type="text/javascript"></script>
+</head>
+<body>
+<button id="btns">hello</button>
+<script type="text/javascript">
+    $(function(){
+        $("#btns").on("click",function(){
+            $("this").showBox({
+                timeOut: 50000000000,
+                content: "您有未读短消息，注意查收哦！",
+                title: "测试弹框",
+                noAnimate:false,//动画开关
+                backgroundColor:"black",
+                color:"white",
+                buttons: {
+                    "我知道了": {
+                        id: "btn_close",
+                        style: "close",
+                        action: "",
+                        onLoad: "",
+                        onClose: true,
+                        onShow: "",
+                        backgroundColor:"purple",
+                        color:"white"
+
+
+                    },
+                     "修改": {
+                     style: "info",
+                     action: "",
+                     onLoad: "",
+                     onClose: true,
+                     onShow: ""
+
+                     },
+                    /*"确认": {
+                     style: "success",
+                     action: "",
+                     onLoad: "",
+                     onClose: true,
+                     onShow: ""
+
+                     },
+                     "警告": {
+                     style: "warning",
+                     action: "",
+                     onLoad: "",
+                     onClose: true,
+                     onShow: ""
+
+                     },
+                     "危险": {
+                     style: "danger",
+                     action: "",
+                     onLoad: "",
+                     onClose: true,
+                     onShow: ""
+
+                     }*/
+                },
+//                noButton:true,
+//                noTitle:true
+            });
+        })
+    })
+</script>
+</body>
+</html>

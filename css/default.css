@@ -1,0 +1,81 @@
+html, body { background: #f9f9f9; -ms-overflow-style: scrollbar; /*ie-scrollbar*/ overflow-x: hidden; /* Prevent scroll on narrow devices */ }
+.all { margin-top: 50px; margin-left: 220px; z-index: 20; padding-left: 0; padding-right: 0; }
+.sidebar { position: fixed; left: 0; top: 50px; width: 220px; padding: 0; background-color: #f1f1f1; -webkit-overflow-scrolling: touch; -webkit-overflow-scrolling: -blackberry-touch; border-right: 1px solid #ccc; overflow-y: auto; overflow-x: hidden; height: 100%;}
+.sidebar ul { list-style-type: none; margin: 0; padding: 0; }
+.sidebar li { border-top: 1px solid #f3f3f3; }
+.sidebar li a { color: #6d7983; }
+.sidebar li .caret { margin-top: 9px; }
+.sidebar li i { margin-right: 15px; }
+.sidebar .nav-header { padding: 10px; background-color: #f5f5f5; }
+.sidebar .nav > li[class*=active] > a { background-color: #FF9E9E; color: #fff; }
+.sidebar .nav > li > a { padding: 13px 15px; border-bottom: 1px solid #e5e5e5; }
+.sidebar .sub-menu { display: none; }
+.sidebar .sub-menu li:hover { background-color: #f5f5f5; }
+.sidebar .sub-menu li a { padding: 15px 30px; text-decoration: none; display: block; background-color: #fff; }
+.sidebar .sub-menu li[class*=active] > a { color: #00acac !important; }
+.sidebar span {margin: 0px 10px 0px 5%}
+.maincontent { width: 100%; height: 100%; margin: 0 auto; min-width: 320px !important; overflow: hidden; }
+.maincontent .breadcrumb { padding: 14px 15px; }
+
+#goTop { padding: 5px 15px; border-radius: 8px; position: fixed; right: 20px; bottom: 20px; display: none; background-color: #aaa; color: #fff; text-align: center; display: none; -moz-transition: background 0.5s linear; -webkit-transition: background 0.5s linear; -o-transition: background 0.5s linear; transition: background 0.5s linear; z-index: 99; }
+#goTop:hover { background: #808080; }
+
+@media (max-width:768px) {
+    .navbar-toggle[class*=pull-left] { margin-left: 15px; margin-right: 0; }
+    #goTop { padding: 0 8px; }
+}
+
+.forkme { position: absolute; top: 50px; right: 0; border: 0; }
+
+/*个人中心头像*/
+.navbar-right .dropdown .dropdown-toggle img{width:20px;height:20px;margin-right:38px;margin-left:10px}
+.navbar-right .dropdown ul.dropdown-menu li a i{margin-right:5%}
+    /*左侧导航栏*/
+.sidebar ul>li a:hover{background-color: #8e9dff;color:#f1f1f1;}
+
+.sidebar ul:first-child{margin-top:20%}
+.sidebar ul:last-child{bottom:0;position: absolute;margin-bottom: 30%;width: 100%;}
+
+/*背景图片*/
+.index_img_bg img{width:25%;height:93%;background-image: url("http://upload.jianshu.io/daily_images/images/sKTbw1wmzsYyDxZGxz8r.jpg");background-size: cover;background-position: center;position: absolute;}
+
+.page-header.index h3{margin-left: 2%}
+
+.row-fluid.thumbnail.caption p{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+/*底部墙copyright背景色*/
+.well.well-lg.index{background-color:#FF9E9E;margin-bottom: 0; border-radius: 0; border-color: #FF9E9E;padding-bottom: 0}
+/*水平导航背景色*/
+.navbar-header button:first-child{background-color: #FF9E9E;}
+.navbar-brand.logo{color: #ffffff;}
+
+/*文章按钮的颜色*/
+.btn.btn-primary.index{background-color: #FF9E9E;border-color:#FF9E9E;color:#ffffff }
+.btn.btn-primary.index:hover{background-color: #ff898e;border-color: #FF9E9E;color:#aaaaaa }
+
+
+
+/*文章详情标签*/
+.caption.index span,.caption.index a{color:#FF9E9E}
+.caption.index a span i{padding:5%}
+.caption.index a:hover{color: #ff4e6e}
+/*返回顶部*/
+/*文章详情背景图*/
+
+
+
+/*文章详情 */
+.row.detail{padding:0 5% 1% 5%}
+.blockquote{border-left:#FF9E9E }
+/*面包屑导航*/
+.breadcrumb li a{color:#FF9E9E}
+div.type_group div.list-group a:first-child{background-color:#FF9E9E;border-color: #FF9E9E;color: white;}
+
+
+/*文字只显示一行*/
+.detail_type{width: 70%; display: inline-block;/*内联对象需加*/ word-break: keep-all;/* 不换行 */ white-space: nowrap;/* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */ overflow: hidden;/* 内容超出宽度时隐藏超出部分的内容 */ text-overflow: ellipsis; /* IE 专有属性，当对象内文本溢出时显示省略标记() ；需与overflow:hidden;一起使用。*/ }
+.text-overflow{ width: 100%; word-break: break-all; text-overflow: ellipsis; display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/ -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/ -webkit-line-clamp: 2; /** 显示的行数 **/ overflow: hidden;  /** 隐藏超出的内容 **/ }
+/*div.type_group div.list-group a:hover{background-color: #ffcfb8;}*/
+/*.thumbnail.index{ background-image: url("//cdn.shopify.com/s/files/1/0691/5403/t/121/assets/insta-3.jpg?3719080539427352740"); }*/
+/*.container-fluid{boder-color:#FF9E9E}*/
+/*#navbar{background-color: #FF9E9E;border-color:#FF9E9E }*/
+/*.nav.navbar-nav.navbar-right.dropdown.active{background-color: red;color:red}*/

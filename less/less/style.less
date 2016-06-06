@@ -1,0 +1,137 @@
+@color-pink: #FF9E9E;
+@color-pink-deep: #ff706f;
+@color-btn-register: #36abfc;
+@color-btn-register-hover: #61bdfc;
+@color-white: #FFFFFF;
+
+/*首页 查看详情按钮*/
+.caption.index {
+  p.index_detail_btn {
+
+  }
+}
+
+/*注册页面*/
+div.well.well-lg.register {
+  background-color: @color-pink;
+  margin-top: 10%;
+}
+
+/*标题*/
+.form-register form h2 {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .form-register {
+    margin-left: 15%;
+  }
+}
+
+/*注册按钮*/
+.form-register form button {
+  width: 100%;
+  background: @color-btn-register;
+  border-color: @color-btn-register;
+  &:hover {
+    background: @color-btn-register-hover;
+    border-color: @color-btn-register-hover;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*首页搜索框*/
+  div.search_index {
+    margin: 3% 0 0 28%;
+    border-color: @color-btn-register-hover;
+  }
+
+  div.search_index input, div.search_index button {
+    color: @color-pink;
+    border: 1px solid @color-btn-register-hover;
+    border-radius: 8px 7px 7px 8px;
+    -moz-box-shadow: 5px 2px 6px @color-btn-register-hover;
+    -ms-box-shadow: 5px 2px 6px @color-btn-register-hover;
+    -wekit-box-shadow: 5px 2px 6px @color-btn-register-hover;
+    -o-box-shadow: 5px 2px 6px @color-btn-register-hover;
+    box-shadow: 0px 1px 5px @color-btn-register-hover;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*首页搜索框*/
+  div.search_index {
+    display: none;
+  }
+}
+
+div.search_index button {
+  &:hover {
+    background: @color-btn-register-hover;
+    color: @color-white;
+  }
+}
+/*登陆页面*/
+
+/*弹出框插件*/
+div.pop_box{
+  width:auto;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  width: auto;
+  height:auto;
+  box-sizing: border-box;
+  background:@color-pink;
+  transform: translateX(-50%) translateY(-50%);
+}
+/*标题*/
+div.pop_box h3{
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 200;
+    opacity: 0.8;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px 3px 0 0;
+}
+/*内容区域*/
+div.pop_box div.pop_content{
+  padding: 15px 40px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+/*关闭的div*/
+div.pop_box div.pop_box_btn{
+  display: block;
+  margin:0 auto;
+  text-align:center;
+  padding: 0 20px;
+}
+/*关闭按钮*/
+div.pop_box_btn button{
+  background: @color-pink-deep;
+  color: #000000;
+  min-width:120px;
+  text-align: center;
+  border: none;
+  margin: 2% 6px;
+  padding: 0.6em 0.6em;
+  display: inline-block;
+  width: auto;
+  min-width: 120px;
+}
+/*图标*/
+div.pop_box div.pop_content div.pop_box_btn i{
+  color: @color-white;
+  border: none;
+  margin: 0 auto;
+}

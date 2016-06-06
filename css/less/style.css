@@ -1,0 +1,111 @@
+/*首页 查看详情按钮*/
+/*注册页面*/
+div.well.well-lg.register {
+  background-color: #ff9e9e;
+  margin-top: 10%;
+}
+/*标题*/
+.form-register form h2 {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 768px) {
+  .form-register {
+    margin-left: 15%;
+  }
+}
+/*注册按钮*/
+.form-register form button {
+  width: 100%;
+  background: #36abfc;
+  border-color: #36abfc;
+}
+.form-register form button:hover {
+  background: #61bdfc;
+  border-color: #61bdfc;
+}
+@media screen and (min-width: 768px) {
+  /*首页搜索框*/
+  div.search_index {
+    margin: 3% 0 0 28%;
+    border-color: #61bdfc;
+  }
+  div.search_index input,
+  div.search_index button {
+    color: #ff9e9e;
+    border: 1px solid #61bdfc;
+    border-radius: 8px 7px 7px 8px;
+    -moz-box-shadow: 5px 2px 6px #61bdfc;
+    -ms-box-shadow: 5px 2px 6px #61bdfc;
+    -wekit-box-shadow: 5px 2px 6px #61bdfc;
+    -o-box-shadow: 5px 2px 6px #61bdfc;
+    box-shadow: 0px 1px 5px #61bdfc;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*首页搜索框*/
+  div.search_index {
+    display: none;
+  }
+}
+div.search_index button:hover {
+  background: #61bdfc;
+  color: #ffffff;
+}
+/*登陆页面*/
+/*弹出框插件*/
+div.pop_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  background: #ff9e9e;
+  transform: translateX(-50%) translateY(-50%);
+}
+/*标题*/
+div.pop_box h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px 3px 0 0;
+}
+/*内容区域*/
+div.pop_box div.pop_content {
+  padding: 15px 40px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+/*关闭的div*/
+div.pop_box div.pop_box_btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+/*关闭按钮*/
+div.pop_box_btn button {
+  background: #ff706f;
+  color: #000000;
+  text-align: center;
+  border: none;
+  margin: 2% 6px;
+  padding: 0.6em 0.6em;
+  display: inline-block;
+  width: auto;
+  min-width: 120px;
+}
+/*图标*/
+div.pop_box div.pop_content div.pop_box_btn i {
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+}

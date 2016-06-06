@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2016/5/31.
+ * Created by benny on 2016/5/31.
  */
 ;(function ($) {
     var div_mask = {
